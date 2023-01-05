@@ -1,0 +1,226 @@
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --blue: #425A9A;
+  --pink: #FBCFDC;
+  --white: white;
+  --fontPoppins: 'Poppins', sans-serif;
+}
+
+body{
+    /* extraligth 200 */
+    font-family: var(--fontPoppins);
+}
+
+/* #root{ 
+    width: 1680px;
+    height: 915px;
+    border: 3px solid red;
+}  */
+
+ /* padre de contenthome y sectionForm */
+.containerRegister, .containerLogin {
+    /* width: 100%;
+    height: 100%; */
+    height: 915px;
+    display: flex;
+    text-align: center;
+    
+}
+
+/* contenido de la portada de escritorio, imagen y parrafo */
+
+  .contentHome{
+     width: 70%;
+     /* border: 3px solid blue; */   
+   }
+
+    .imghome {
+      width: 100%;
+      height: 65%;
+    }
+
+    .contentHome p{
+      margin: 40px;
+      padding: 30px;
+      color: #425A9A;
+      font-size: 23px;
+      font-weight: medium;
+    }
+
+/* contenido de los formularios de register y login */
+  .sectionForm{
+    width: 40%;
+    /* border: 3px solid yellow; */
+    background-color: #425A9A;
+    padding: 20px;
+    position: relative;
+  }
+    /* encabezado del formulario */
+    .sectionForm img{
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      margin-top: 62px;
+      /* margin-right: auto;
+      margin-left: auto; */
+    } 
+
+    .sectionForm h1{
+      color: white;
+      font-size: 50px;
+      margin-top: 120px;
+      margin-bottom: 20px;
+
+    }
+
+    .sectionForm h2{
+      color: white;
+      font-size: 20px;
+
+    }
+
+    .sectionForm h3{
+      color: white;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    /* formulario de registrarse y login */
+
+    #formRegister, #formLogin{
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      align-items: center;
+    
+    }
+
+    /* inputs del formulario */
+    #nameRegister, #emailRegister, #passwordRegister, #passwordConfirm,
+    #emailLogin, #passwordLogin{
+      background-color: #C1E1FF;
+      height: 30px;
+      width: 200px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #425A9A;
+    }
+
+    .sectionForm input::placeholder {
+      color: #425A9A; 
+    }
+
+    #messageEmail, #messageName, #messagePassword, #messagePasswordConfirm {
+      color:#FBCFDC;
+      font-size: 12px;
+      font-weight: 600;
+    } 
+
+    /* botones para registrarse e iniciar sesión */
+    #register, #login{
+      background-color: #FBCFDC;
+      margin: 20px;
+      height: 40px;
+      width: 110px;
+      font-size: 12px;
+      border-radius: 20px;
+      border:0 solid transparent;
+      color: #425A9A;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #register:hover, #login:hover {
+      /* Modificar el estilo del botón cuando el mouse esté sobre él */
+      background-color: white; /* Color rosa */
+      cursor: pointer;
+    }
+
+    .question{
+      margin: 0px;
+      color: white;
+      font-size: 15px;
+    }
+
+    .question input{
+      width: 93px;
+      border: transparent;
+      border-bottom: 2px solid #FBCFDC;
+      background-color: transparent;
+      color: #FBCFDC;
+      text-align: center;
+    }
+
+    .question input:hover{
+      color: var(--white);
+      border-bottom: 2px solid var(--white);
+      cursor: pointer;
+    }
+
+    .terminos {
+      color: var(--white);
+      font-size: 13px;
+      display: inline-block; /* hacer que el texto ocupe el mismo espacio que el checkbox */
+      vertical-align: middle; 
+      /* alinear el texto con el checkbox */
+    }
+
+    .terminos span {
+      color: var(--pink);
+      /* font-size: 15px; */
+    }
+
+    .redes-sociales{
+      display: flex;
+      width: 110px;
+      height: 50px;
+      position: relative;
+      text-align: center;
+      margin: 15px;
+    }
+
+    #imggoogle {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+
+    }
+
+    #imgfacebook {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      margin: 0;
+      right: 0;
+      
+    }
+
+    #imggoogle:hover, #imgfacebook:hover{
+      cursor: pointer;
+    }
+
+
+
+
+
+
+/* form input:focus:required:invalid{
+    border:2px solid #FBCFDC;
+} */
+
+  
+/* <a href="ruta/a/archivo.pdf" id="termsLink" target="_self"></a> */
+  
+    
+  
