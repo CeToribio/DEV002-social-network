@@ -29,9 +29,9 @@ export const onNavigate = (pathname) => {
     root.appendChild(routes[pathname]());
 };
 
-let prints = routes[window.location.pathname];
+// let prints = routes[window.location.pathname];
 
-root.appendChild(prints());
+root.appendChild(routes[window.location.pathname]());
 
 window.onpopstate = (e) => {
     console.log(e.state);
