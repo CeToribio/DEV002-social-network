@@ -30,6 +30,7 @@ export const onNavigate = (pathname) => {
 };
 
 let prints = routes[window.location.pathname];
+console.log(prints);
 
 root.appendChild(prints());
 
