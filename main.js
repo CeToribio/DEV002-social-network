@@ -9,9 +9,9 @@ import './components/Login.js'
 const root = document.querySelector('#root');
 
 const routes = {
-    '/': register(),
-    '/login':login(),
-    '/home': home()
+    '/': register,
+    '/login':login,
+    '/home': home
 }
 
 // console.log("ubicacion",window.location.pathname)
@@ -26,18 +26,18 @@ export const onNavigate = (pathname) => {
     while(root.firstChild){
         root.removeChild(root.firstChild);
     }
-    root.appendChild(routes[pathname]);
+    root.appendChild(routes[pathname]());
 };
 
-// let prints = routes[window.location.pathname];
+let prints = routes[window.location.pathname];
 
-root.appendChild(routes[window.location.pathname]);
+root.appendChild(prints());
 
 window.onpopstate = (e) => {
-    console.log(e.state);
+    // console.log(e.state);
     root.innerHTML = "";
     // onNavigate(e.state.state)
-    root.appendChild(routes[window.location.pathname]);
+    root.appendChild(routes[window.location.pathname]());
 }
 
 
