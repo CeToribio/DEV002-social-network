@@ -74,7 +74,7 @@ formPost.addEventListener("submit", (e) => {
         updateData(id, { post: postArea.value });
         editStatus = false;
         id = "";
-        btnPublicar.innerHTML = "publicar";
+        btnPublicar.innerHTML = "Publicar";
     } 
    
     formPost.reset();
@@ -149,10 +149,7 @@ getOnDatas((post) =>{
         </div>
     </div>`
 
-    }
-    
-    
-      
+    } 
   });
 
 // ---------------------------- array likes
@@ -199,10 +196,8 @@ btndelete.forEach(btn => {
         const id = e.target.dataset.id;
         const confirmDelete = confirm("¿Seguro que deseas eliminar?");
         if (confirmDelete) {
-            if (confirmDelete) {
                 // Llamada a la función para eliminar el dato con el ID obtenido
                 deleteData(id);
-            }
         }
     });
 });
@@ -216,7 +211,6 @@ btndelete.forEach(btn => {
     btneditar.forEach(buton => {
     // console.log(buton)
         buton.addEventListener('click', async(e) => {
-            try {
                 const postEdit = await getData(e.target.dataset.id)
                 const task = postEdit.data()
         
@@ -224,20 +218,12 @@ btndelete.forEach(btn => {
                id = postEdit.id;
                postArea.value = task.post
                
-               btnPublicar.innerHTML = "Save"
-                } catch(error) {
-                    console.log(error);
-                }
+               btnPublicar.innerHTML = "Guardar"
         
               });
             });
         
 });
-
-
-
-
-
 
 getDatasUser() 
 .then ((usuarios) => {
@@ -268,11 +254,8 @@ getDatasUser()
       // imprimir desde aqui el nombre del usuario que esta en el post
 
       } 
-
-
   })
   
-
 })
 
 
@@ -290,5 +273,4 @@ btnCerrarSesion.addEventListener("click", async() => {
     return container;
 }
 
-{/* <button id="btneditdelete" class="btneditdelete"><img src="./img/tres-puntos.png" alt=""></button>
-<ul class="listadebotones"> */}
+

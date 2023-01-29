@@ -1,6 +1,5 @@
 import { auth, getFirestore,collection,  addDoc, getDocs, onSnapshot,doc, deleteDoc,getDoc, orderBy, query, updateDoc, Timestamp, updateProfile, arrayUnion, arrayRemove} from "../firebase/index.js";
 
-
 const db = getFirestore();
 
 // export const saveDatas = (post) => addDoc(collection(db, 'post'), {post});
@@ -14,7 +13,6 @@ export const saveDatasPost = (post) => addDoc(collection(db, 'post'), {
   likes: 0,
   likesUser: []
 });
-
 
 export const getDatasPost = () => getDocs(collection(db, 'post'));
 

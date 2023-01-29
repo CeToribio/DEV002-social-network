@@ -29,11 +29,11 @@ Luego de una serie de investigaciones y estudios, llegamos a la conclusión de q
 
 ### Objetivos del proyecto Doggos:
 
---Desarrollar una Single Page Application (SPA) con temática de red social para dueños de perros.
---Aplicar los conceptos de responsividad en el desarrollo de las vistas (templates) para garantizar una buena experiencia de usuario en dispositivos móviles.
---Implementar un router para la navegación entre las diferentes vistas de la aplicación, lo que permitirá una mejor organización del código y una navegación más intuitiva para los usuarios.
---Emplear un servicio externo para la persistencia de datos de la aplicación(FIREBASE), lo que permitirá almacenar información de los usuarios y sus perros de manera segura y escalable.
---Crear una suite de pruebas  que permitan testear código lo que garantizará la estabilidad y confiabilidad de la aplicación.
+* Desarrollar una Single Page Application (SPA) con temática de red social para dueños de perros.
+* Aplicar los conceptos de responsividad en el desarrollo de las vistas (templates) para garantizar una buena experiencia de usuario en dispositivos móviles.
+* Implementar un router para la navegación entre las diferentes vistas de la aplicación, lo que permitirá una mejor organización del código y una navegación más intuitiva para los usuarios.
+* Emplear un servicio externo para la persistencia de datos de la aplicación(FIREBASE), lo que permitirá almacenar información de los usuarios y sus perros de manera segura y escalable.
+* Crear una suite de pruebas  que permitan testear código lo que garantizará la estabilidad y confiabilidad de la aplicación.
 
 ## 4. Investigación UX
 En esta sección, presentaremos las historias de usuario de nuestra aplicación, las cuales ilustran cómo nuestra plataforma ayudará a los usuarios a conectarse y compartir sus experiencias con otros amantes de los perros. Estas historias de usuario son una muestra de las funcionalidades y beneficios que ofrecerá nuestra aplicación, diseñadas para mejorar la experiencia del usuario y ayudarles a conectarse con otros amantes de los perros.
